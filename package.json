@@ -1,31 +1,20 @@
 {
-  "name": "gisaweb.dev",
-  "type": "module",
-  "version": "0.0.1",
-  "scripts": {
-    "dev": "astro dev",
-    "start": "astro dev",
-    "build": "astro build",
-    "preview": "astro preview",
-    "astro": "astro",
-    "format": "prettier -w .",
-    "lint:eslint": "eslint . --ext .js,.astro,.ts,.tsx",
-    "lint:eslint:fix": "eslint . --ext .js,.astro,.ts,.tsx --fix"
-  },
-  "dependencies": {
-    "astro": "^2.2.1"
-  },
-  "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^5.57.1",
-    "@typescript-eslint/parser": "^5.57.1",
-    "eslint": "^8.38.0",
-    "eslint-config-prettier": "^8.8.0",
-    "eslint-config-standard": "^17.0.0",
-    "eslint-plugin-astro": "^0.26.1",
-    "eslint-plugin-import": "^2.27.5",
-    "eslint-plugin-n": "^15.7.0",
-    "eslint-plugin-promise": "^6.1.1",
-    "prettier": "^2.8.7",
-    "prettier-plugin-astro": "^0.8.0"
-  }
+	"name": "gisaweb.dev",
+	"type": "module",
+	"version": "0.0.1",
+	"scripts": {
+		"dev": "astro dev",
+		"start": "astro dev",
+		"build": "astro build",
+		"preview": "astro preview",
+		"astro": "astro"
+	},
+	"dependencies": {
+		"astro": "2.2.1",
+		"normalize.css": "8.0.1"
+	},
+	"devDependencies": {
+		"prettier": "2.8.7",
+		"prettier-plugin-astro": "0.8.0"
+	}
 }
