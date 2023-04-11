@@ -1,0 +1,8 @@
+html {
+	font-family: "Noto Sans Mono", system-ui, sans-serif;
+	scroll-behavior: smooth;
+}
+
+.center {
+	@apply max-w-7xl p-5  sm:mt-0 sm:ml-auto sm:mr-auto sm:mb-auto sm:px-10 sm:py-5;
+}

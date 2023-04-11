@@ -1,8 +1,38 @@
-<header class="bg-red-600">
-	<div>
-		<a href="">gisawebdev</a>
-		<nav>
-			<a href="">Tools</a>
-		</nav>
+---
+import SunIcon from "./Icons/SunIcon.astro";
+import MoonIcon from "./Icons/MoonIcon.astro";
+---
+
+<header>
+	<div class="flex justify-between items-center">
+		<a href="" class="flex items-center gap-2">
+			<!-- icon logo -->
+			<div class="h-10 w-10 bg-yellow-400"></div>
+			<span class="text-lg md:text-2xl font-semibold"> GisaWebDev</span>
+		</a>
+		<div class="flex items-center gap-4">
+			<div class="flex gap-1">
+				<!-- icon tools -->
+				<div class="h-6 w-6 bg-yellow-300"></div>
+				<a href="" class="font-semibold hidden sm:block">Tools</a>
+			</div>
+			<!-- icon dark mode -->
+			<button class="flex items-center" id="dark-mode">
+				<MoonIcon id="sun-icon" />
+				<SunIcon id="moon-icon" />
+			</button>
+		</div>
 	</div>
 </header>
+
+<script>
+	const darkMode = document.querySelector("#dark-mode");
+	const sunIcon = document.querySelector("#sun-icon");
+	const moonIcon = document.querySelector("#moon-icon");
+
+	const changeDarkMode = () => {
+		console.log("entro");
+	};
+
+	darkMode.addEventListener("click", changeDarkMode);
+</script>
