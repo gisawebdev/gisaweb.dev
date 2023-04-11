@@ -17,22 +17,16 @@ import MoonIcon from "./Icons/MoonIcon.astro";
 				<a href="" class="font-semibold hidden sm:block">Tools</a>
 			</div>
 			<!-- icon dark mode -->
-			<button class="flex items-center" id="dark-mode">
+			<button
+				class="flex items-center"
+				id="theme-btn"
+				title="Toggles light & dark"
+				aria-label="auto"
+				aria-live="polite"
+			>
 				<MoonIcon id="sun-icon" />
 				<SunIcon id="moon-icon" />
 			</button>
 		</div>
 	</div>
 </header>
-
-<script>
-	const darkMode = document.querySelector("#dark-mode");
-	const sunIcon = document.querySelector("#sun-icon");
-	const moonIcon = document.querySelector("#moon-icon");
-
-	const changeDarkMode = () => {
-		console.log("entro");
-	};
-
-	darkMode.addEventListener("click", changeDarkMode);
-</script>

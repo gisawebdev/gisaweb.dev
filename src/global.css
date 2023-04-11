@@ -1,8 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html {
-	font-family: "Noto Sans Mono", system-ui, sans-serif;
+	font-family: 'Noto Sans Mono', system-ui, sans-serif;
 	scroll-behavior: smooth;
 }
 
 .center {
-	@apply max-w-7xl p-5  sm:mt-0 sm:ml-auto sm:mr-auto sm:mb-auto sm:px-10 sm:py-5;
+	@apply max-w-7xl p-5  sm:mb-auto sm:ml-auto sm:mr-auto sm:mt-0 sm:px-10 sm:py-5;
 }
