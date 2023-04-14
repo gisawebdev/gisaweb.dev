@@ -1,32 +1,37 @@
 ---
-import SunIcon from "./Icons/SunIcon.astro";
-import MoonIcon from "./Icons/MoonIcon.astro";
+import { SITE } from '../config';
+import SunIcon from './Icons/SunIcon.astro';
+import MoonIcon from './Icons/MoonIcon.astro';
 ---
 
 <header>
-	<div class="flex justify-between items-center">
+	<div class="flex items-center justify-between">
 		<a href="" class="flex items-center gap-2">
 			<!-- icon logo -->
 			<div class="h-10 w-10 bg-yellow-400"></div>
-			<span class="text-lg md:text-2xl font-semibold"> GisaWebDev</span>
+			<span class="text-lg font-semibold md:text-2xl"> GisaWebDev</span>
 		</a>
 		<div class="flex items-center gap-4">
 			<div class="flex gap-1">
 				<!-- icon tools -->
 				<div class="h-6 w-6 bg-yellow-300"></div>
-				<a href="" class="font-semibold hidden sm:block">Tools</a>
+				<a href="" class="hidden font-semibold sm:block">Tools</a>
 			</div>
 			<!-- icon dark mode -->
-			<button
-				class="flex items-center"
-				id="theme-btn"
-				title="Toggles light & dark"
-				aria-label="auto"
-				aria-live="polite"
-			>
-				<MoonIcon id="sun-icon" />
-				<SunIcon id="moon-icon" />
-			</button>
+			{
+				SITE.lightAndDarkMode && (
+					<button
+						class="flex items-center"
+						id="theme-btn"
+						title="Toggles light & dark"
+						aria-label="auto"
+						aria-live="polite"
+					>
+						<MoonIcon id="moon-icon" />
+						<SunIcon id="sun-icon" />
+					</button>
+				)
+			}
 		</div>
 	</div>
 </header>
