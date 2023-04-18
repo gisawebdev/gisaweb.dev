@@ -1,10 +1,15 @@
 {
 	"extends": "astro/tsconfigs/base",
 	"compilerOptions": {
-    "baseUrl": ".",
-    "paths": {
-      "@components/*": ["src/components/*"],
-      "@layouts/*": ["src/layouts/*"]
-    }
-  }
+		"baseUrl": ".",
+		"paths": {
+			"@assets/*": ["src/assets/*"],
+			"@config": ["src/config.ts"],
+			"@components/*": ["src/components/*"],
+			"@content/*": ["src/content/*"],
+			"@layouts/*": ["src/layouts/*"],
+			"@pages/*": ["src/pages/*"],
+			"@utils/*": ["src/utils/*"]
+		}
+	}
 }

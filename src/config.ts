@@ -21,7 +21,7 @@ export const SOCIALS: SocialObjects = [
 		name: 'Facebook',
 		href: 'https://github.com/satnaing/astro-paper',
 		linkTitle: `${SITE.title} on Facebook`,
-		active: true,
+		active: false,
 	},
 	{
 		name: 'Instagram',
@@ -39,7 +39,7 @@ export const SOCIALS: SocialObjects = [
 		name: 'Twitter',
 		href: 'https://github.com/satnaing/astro-paper',
 		linkTitle: `${SITE.title} on Twitter`,
-		active: false,
+		active: true,
 	},
 	{
 		name: 'Twitch',

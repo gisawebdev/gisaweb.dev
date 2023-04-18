@@ -1,13 +1,12 @@
 export type SocialMedia =
-	| "Github"
-	| "Facebook"
-	| "Instagram"
-	| "LinkedIn"
-	| "Twitter"
-	| "Twitch"
-	| "YouTube"
-	| "TikTok"
-	| "Discord";
+	| 'Github'
+	| 'Facebook'
+	| 'Instagram'
+	| 'LinkedIn'
+	| 'Twitter'
+	| 'Twitch'
+	| 'YouTube'
+	| 'TikTok';
 
 export type Site = {
 	website: string;
