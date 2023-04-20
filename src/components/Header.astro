@@ -2,6 +2,7 @@
 import { SITE } from '../config';
 import SunIcon from './Icons/SunIcon.astro';
 import MoonIcon from './Icons/MoonIcon.astro';
+import ToolsIcon from './Icons/ToolsIcon.astro';
 ---
 
 <header>
@@ -12,9 +13,8 @@ import MoonIcon from './Icons/MoonIcon.astro';
 			<span class="text-lg font-semibold md:text-2xl"> GisaWebDev</span>
 		</a>
 		<div class="flex items-center gap-4">
-			<div class="flex gap-1">
-				<!-- icon tools -->
-				<div class="h-6 w-6 bg-aquamarine"></div>
+			<div class="icon flex gap-1">
+				<ToolsIcon />
 				<a href="" class="hidden font-semibold sm:block">Tools</a>
 			</div>
 			<!-- icon dark mode -->

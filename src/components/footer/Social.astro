@@ -2,15 +2,9 @@
 import socialIcons from '@assets/socialIcons';
 import LinkButton from '@components/LinkButton.astro';
 import { SOCIALS } from '@config';
-
-export interface Props {
-	centered?: boolean;
-}
-
-const { centered = false } = Astro.props;
 ---
 
-<div class={`social-icons ${centered ? 'flex' : ''}`}>
+<div class="flex gap-5">
 	{
 		SOCIALS.filter(social => social.active).map(social => (
 			<LinkButton
