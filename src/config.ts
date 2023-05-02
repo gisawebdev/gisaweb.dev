@@ -7,7 +7,7 @@ export const SITE: Site = {
 	title: 'GisaWebDev | Blog de desarrollo web',
 	lightAndDarkMode: true,
 	ogImage: '',
-	postPerPage: 0,
+	postPerPage: 3,
 };
 
 export const SOCIALS: SocialObjects = [
