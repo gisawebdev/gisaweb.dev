@@ -1,13 +1,20 @@
 import type { Site, SocialObjects } from './types';
 
 export const SITE: Site = {
-	website: 'http://gisaweb.dev/',
+	website: 'https://gisaweb.dev/',
 	author: 'Gilbert Acosta',
-	desc: 'Blog de desarrollo web',
-	title: 'GisaWebDev | Blog de desarrollo web',
+	desc: 'Blog de desarrollo web.',
+	title: 'GisaWebDev',
+	ogImage: 'astropaper-og.jpg',
 	lightAndDarkMode: true,
-	ogImage: '',
 	postPerPage: 3,
+};
+
+export const LOGO_IMAGE = {
+	enable: false,
+	svg: true,
+	width: 216,
+	height: 46,
 };
 
 export const SOCIALS: SocialObjects = [
@@ -16,12 +23,6 @@ export const SOCIALS: SocialObjects = [
 		href: 'https://github.com/gisawebdev',
 		linkTitle: ` ${SITE.title} en Github`,
 		active: true,
-	},
-	{
-		name: 'YouTube',
-		href: 'https://www.youtube.com/@gisawebdev',
-		linkTitle: `${SITE.title} en YouTube`,
-		active: false,
 	},
 	{
 		name: 'Instagram',
@@ -36,10 +37,16 @@ export const SOCIALS: SocialObjects = [
 		active: true,
 	},
 	{
+		name: 'Mail',
+		href: 'mailto:gisawebdev@gmail.com',
+		linkTitle: `Mandame un correo a ${SITE.title}@gmail.com`,
+		active: false,
+	},
+	{
 		name: 'Twitter',
 		href: 'https://twitter.com/gisawebdev',
 		linkTitle: `${SITE.title} en Twitter`,
-		active: true,
+		active: false,
 	},
 	{
 		name: 'Twitch',
@@ -47,7 +54,12 @@ export const SOCIALS: SocialObjects = [
 		linkTitle: `${SITE.title} en Twitch`,
 		active: false,
 	},
-
+	{
+		name: 'YouTube',
+		href: 'https://www.youtube.com/@gisawebdev',
+		linkTitle: `${SITE.title} en YouTube`,
+		active: false,
+	},
 	{
 		name: 'TikTok',
 		href: 'https://www.tiktok.com/@gisawebdev',
@@ -55,9 +67,15 @@ export const SOCIALS: SocialObjects = [
 		active: false,
 	},
 	{
-		name: 'Facebook',
-		href: '',
-		linkTitle: `${SITE.title} en Facebook`,
+		name: 'CodePen',
+		href: 'https://bongo.cat/',
+		linkTitle: `${SITE.title} en CodePen`,
+		active: false,
+	},
+	{
+		name: 'Discord',
+		href: 'https://bongo.cat/',
+		linkTitle: `${SITE.title} en Discord`,
 		active: false,
 	},
 ];

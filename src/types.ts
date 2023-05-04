@@ -1,13 +1,3 @@
-export type SocialMedia =
-	| 'Github'
-	| 'Facebook'
-	| 'Instagram'
-	| 'LinkedIn'
-	| 'Twitter'
-	| 'Twitch'
-	| 'YouTube'
-	| 'TikTok';
-
 export type Site = {
 	website: string;
 	author: string;
@@ -28,3 +18,15 @@ export type SocialObjects = {
 export type SocialIcons = {
 	[social in SocialMedia]: string;
 };
+
+export type SocialMedia =
+	| 'Github'
+	| 'Instagram'
+	| 'LinkedIn'
+	| 'Mail'
+	| 'Twitter'
+	| 'Twitch'
+	| 'YouTube'
+	| 'TikTok'
+	| 'CodePen'
+	| 'Discord';
