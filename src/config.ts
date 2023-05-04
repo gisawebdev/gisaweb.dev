@@ -1,13 +1,13 @@
 import type { Site, SocialObjects } from './types';
 
 export const SITE: Site = {
-	website: 'https://gisaweb.dev/',
 	author: 'Gilbert Acosta',
 	desc: 'Blog de desarrollo web.',
-	title: 'GisaWebDev',
-	ogImage: 'astropaper-og.jpg',
 	lightAndDarkMode: true,
+	ogImage: 'astropaper-og.jpg',
 	postPerPage: 3,
+	title: 'GisaWebDev',
+	website: 'https://gisaweb.dev/',
 };
 
 export const LOGO_IMAGE = {
